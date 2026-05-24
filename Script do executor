@@ -1,0 +1,7 @@
+local function require_externo(url)
+    local codigo = game:HttpGet(url)
+    return loadstring(codigo)()
+end
+
+-- Exemplo de uso puxando um módulo Lua externo:
+local MeuModulo = require_externo("SUA_URL_RAW_AQUI")
